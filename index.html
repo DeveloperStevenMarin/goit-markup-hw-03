@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>WebStudio</title>
@@ -24,11 +28,11 @@
   </head>
   <body>
     <header class="navbar">
-      <a href="#" class="logo">
+      <a href="#">
         <p class="page-name">WebStudio</p>
       </a>
       <nav>
-        <ul class="list">
+        <ul class="navbar-list">
           <li>
             <a id="estudio" href="index.html" class="nav-link">Estudio</a>
           </li>
@@ -42,35 +46,35 @@
           </li>
         </ul>
       </nav>
-      <figure class="nav-bar-info">
-        <img
-          src="images/sobre.svg"
-          class="nav-bar-icon"
-          alt="Imagen contacto"
-        />
-        <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
-          >info@devstudio.com</a
-        >
-      </figure>
-      <figure class="nav-bar-info">
-        <img
-          src="images/mobile.svg"
-          class="nav-bar-icon"
-          alt="Imagen Contacto"
-        />
-        <a href="tel:+525555296000" target="_blank" class="nav-link"
-          >+52 55 5529 6000</a
-        >
-      </figure>
+      <ul class="navbar-contact-info">
+        <li><figure class="navbar-info">
+          <img src="images/sobre.svg" class="navbar-icon" alt="Imagen contacto" />
+          <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
+            >info@devstudio.com</a
+          >
+        </figure></li>
+        <li><figure class="navbar-info">
+          <img
+            src="images/mobile.svg"
+            class="navbar-icon"
+            alt="Imagen Contacto"
+          />
+          <a href="tel:+525555296000" target="_blank" class="nav-link"
+            >+52 55 5529 6000</a
+          >
+        </figure></li>
+      </ul>
+      
+      
     </header>
     <main>
       <article class="content">
         <h1 class="article-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
         <button class="main-button">Solicite nuestro servicio</button>
       </article>
-      <article class="main-content">
-        <ul class="main-content" style="list-style: none">
-          <li>
+      <article>
+        <ul class="main-content">
+          <li class="main-content-list">
             <section>
               <h2 class="main-content-title">ATENCIÓN A LOS DETALLES</h2>
               <p class="main-content-text">
@@ -79,7 +83,7 @@
               </p>
             </section>
           </li>
-          <li>
+          <li class="main-content-list">
             <section>
               <h2 class="main-content-title">PUNTUALIDAD</h2>
               <p class="main-content-text">
@@ -89,7 +93,7 @@
               </p>
             </section>
           </li>
-          <li>
+          <li class="main-content-list">
             <section>
               <h2 class="main-content-title">PLANIFICACIÓN</h2>
               <p class="main-content-text">
@@ -98,7 +102,7 @@
               </p>
             </section>
           </li>
-          <li>
+          <li class="main-content-list">
             <section>
               <h2 class="main-content-title">TEGNOLOGÍA MODERNA</h2>
               <p class="main-content-text">
@@ -111,7 +115,7 @@
       </article>
       <h2 class="our-job-title">A qué nos dedicamos</h2>
       <article class="main-content">
-        <ul class="main-content" style="list-style: none">
+        <ul class="main-content">
           <li>
             <section class="img-content">
               <img
@@ -181,8 +185,8 @@
       </article>
     </main>
     <footer>
-      <article>
-        <a href="#" class="logo">
+      <article class="footer-contact">
+        <a href="#">
           <p class="footer-page-name">WebStudio</p>
         </a>
         <address>
